@@ -10,7 +10,7 @@ submit.addEventListener('click', (e) => {
 })
 
 function changePage() {
-  if (valor === '#') return form.action = '#';
+  if (valor === '') return form.action = '#';
   if (valor === 'Probabilidade') return form.action = './pages/probabilidade/index.html';
   if (valor === 'Arranjo') return form.action = './pages/arranjo/index.html';
   if (valor === 'Combinação') return form.action = './pages/combinacao/index.html';
