@@ -4,7 +4,6 @@ let form = document.querySelector('#form')
 let valor;
 
 submit.addEventListener('click', (e) => {
-  e.preventDefault();
   select.addEventListener('change', () => { valor = select.value; })
   changePage()
   console.log(form.action)
