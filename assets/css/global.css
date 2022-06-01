@@ -1,0 +1,32 @@
+body {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #54007a;
+}
+.submit {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
+  font-weight: 600;
+  color: white;
+  background: #bf49f5;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px 8px 4px 8px;
+  cursor: pointer;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
+  width: 80px;
+}
+#resultado {
+}
