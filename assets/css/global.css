@@ -7,7 +7,7 @@ body {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
   font-weight: 600;
   color: white;
-  background: #bf49f5;
+  background: #973ac2;
   border: none;
   padding: 5px 8px;
   border-radius: 4px 8px 4px 8px;
@@ -18,6 +18,7 @@ body {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .input {
   border: none;
@@ -28,5 +29,20 @@ body {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
   width: 80px;
 }
-#resultado {
+.label {
+  font-size: 20px;
+  font-style: italic;
+  color: #d271ff;
+}
+.caixa-pai {
+  display: flex;
+  flex-direction: column;
+}
+
+.caixa-filho {
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  width: 50vw;
 }

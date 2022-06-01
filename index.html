@@ -13,19 +13,39 @@
     <form action="#" id="form">
       <h2>Que tipo de Cálculo você irá fazer?</h2>
 
-      <input type="radio" name="select" id="permutacao" value="permutacao" />
-      <label for="permutacao">Permutação</label>
-      <input type="radio" name="select" id="arranjo" value="arranjo" />
-      <label for="arranjo">Arranjo</label>
-      <input type="radio" name="select" id="combinacao" value="combinacao" />
-      <label for="combinacao">Combinação</label>
-      <input
-        type="radio"
-        name="select"
-        id="probabilidade"
-        value="probabilidade"
-      />
-      <label for="probabilidade">Probabilidade</label>
+      <div class="caixa-pai">
+        <div class="caixa-filho">
+          <input
+            type="radio"
+            name="select"
+            id="permutacao"
+            value="permutacao"
+          />
+          <label for="permutacao" class="label">Permutação</label>
+        </div>
+        <div class="caixa-filho">
+          <input type="radio" name="select" id="arranjo" value="arranjo" />
+          <label for="arranjo" class="label">Arranjo</label>
+        </div>
+        <div class="caixa-filho">
+          <input
+            type="radio"
+            name="select"
+            id="combinacao"
+            value="combinacao"
+          />
+          <label for="combinacao" class="label">Combinação</label>
+        </div>
+        <div class="caixa-filho">
+          <input
+            type="radio"
+            name="select"
+            id="probabilidade"
+            value="probabilidade"
+          />
+          <label for="probabilidade" class="label">Probabilidade</label>
+        </div>
+      </div>
       <input type="submit" id="submit" class="submit" value="Começar!" />
     </form>
   </body>
