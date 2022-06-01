@@ -4,16 +4,14 @@ const form = document.querySelector('#form')
 let valor;
 
 submit.addEventListener('click', () => {
-  select.addEventListener('change', () => { valor = select.value; })
   changePage()
   console.log(form.action)
 })
 
 function changePage() {
-  if (valor === '') return form.action = '#';
-  if (valor === 'probabilidade') return form.action = './pages/probabilidade/index.html';
-  if (valor === 'arranjo') return form.action = './pages/arranjo/index.html';
-  if (valor === 'combinacao') return form.action = './pages/combinacao/index.html';
-  if (valor === 'permutacao') return form.action = './pages/permutacao/index.html';
+  if (document.querySelector('#probabilidade').checked == true) return form.action = './pages/probabilidade/index.html';
+  if (document.querySelector('#arranjo').checked == true) return form.action = './pages/arranjo/index.html';
+  if (document.querySelector('#combinacao').checked == true) return form.action = './pages/combinacao/index.html';
+  if (document.querySelector('#permutacao').checked == true) return form.action = './pages/permutacao/index.html';
 }
 

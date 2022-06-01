@@ -8,15 +8,22 @@
     <title>Matemática</title>
   </head>
   <body>
-    <form action="" id="form">
-      <label for="select">Qual tipo de calculo você irá fazer?</label>
-      <select id="select">
-        <option value="">Selecione aqui</option>
-        <option value="probabilidade">Probabilidade</option>
-        <option value="arranjo">Arranjo</option>
-        <option value="combinacao">Combinação</option>
-        <option value="permutacao">Permutação</option>
-      </select>
+    <form action="#" id="form">
+      <h3>Que tipo de Cálculo você irá fazer?</h3>
+
+      <input type="radio" name="select" id="permutacao" value="permutacao" />
+      <label for="permutacao">Permutação</label>
+      <input type="radio" name="select" id="arranjo" value="arranjo" />
+      <label for="arranjo">Arranjo</label>
+      <input type="radio" name="select" id="combinacao" value="combinacao" />
+      <label for="combinacao">Combinação</label>
+      <input
+        type="radio"
+        name="select"
+        id="probabilidade"
+        value="probabilidade"
+      />
+      <label for="probabilidade">Probabilidade</label>
       <input type="submit" id="submit" value="Começar!" />
     </form>
   </body>
