@@ -11,7 +11,16 @@ const numeroElementoCircular = document.querySelector('#permutacao-circular')
 // permutacao simples
 submitUm.addEventListener('click', (e) => {
   e.preventDefault();
-  resultadoUm.innerHTML = `É possivel fazer ${calculaFatorial(numeroElemento.value)} combinações!`
+  const resul = calculaFatorial(numeroElemento.value);
+  console.log(`vamo ver ${resul}`)
+
+  if (resul < 0 || !resul) {
+    resultadoUm.classList.add('erro')
+    resultadoUm.innerHTML = 'Tem algo de errado com a sua conta!'
+  } else {
+    resultadoUm.classList.remove('erro')
+    resultadoUm.innerHTML = `É possivel fazer ${resul} combinações!`
+  }
 })
 
 
@@ -19,7 +28,14 @@ submitUm.addEventListener('click', (e) => {
 submitDois.addEventListener('click', (e) => {
   e.preventDefault();
   const permutacaoCircular = calculaFatorial(numeroElementoCircular.value - 1);
-  resultadoDois.innerHTML = `Podemos obter ${permutacaoCircular} combinações!`
+
+  if (permutacaoCircular < 0 || !permutacaoCircular) {
+    resultadoDois.classList.add('erro')
+    resultadoDois.innerHTML = 'Tem algo de errado com sua Conta!'
+  } else {
+    resultadoDois.classList.remove('erro')
+    resultadoDois.innerHTML = `Podemos obter ${permutacaoCircular} combinações!`
+  }
 })
 
 
@@ -27,6 +43,9 @@ const calculaFatorial = (n) => {
   let arranjo = n;
   for (let i = 1; i < n; i++) {
     arranjo *= i;
+  }
+  if (n === 0) {
+    return 1;
   }
   return arranjo;
 }
