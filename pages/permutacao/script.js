@@ -23,10 +23,6 @@ submitDois.addEventListener('click', (e) => {
 })
 
 
-
-
-
-
 const calculaFatorial = (n) => {
   let arranjo = n;
   for (let i = 1; i < n; i++) {
