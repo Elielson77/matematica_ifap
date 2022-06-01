@@ -62,3 +62,10 @@ body {
   margin: 15px;
   font-size: 18px;
 }
+.menu {
+  text-decoration: none;
+  color: rgb(189, 189, 189);
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+}
