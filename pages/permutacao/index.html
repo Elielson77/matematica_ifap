@@ -12,23 +12,46 @@
     <h1 class="center">Permutação</h1>
 
     <form action="#">
-      <h2>Permutação Simples</h2>
-      <label for="permutacao-simples" class="label"
-        >Indique o número de elementos:</label
-      >
-      <input type="number" id="permutacao-simples" class="input" />
-      <input type="submit" id="submit1" class="submit" value="Calcular" />
-      <div id="resultado1"></div>
+      <div class="caixa-pai">
+        <h2>Permutação Simples</h2>
+        <label for="permutacao-simples" class="label caixa-filho"
+          >Indique o número de elementos:</label
+        >
+        <input
+          type="number"
+          id="permutacao-simples"
+          class="input caixa-filho"
+        />
+        <input
+          type="submit"
+          id="submit1"
+          class="submit caixa-filho"
+          value="Calcular"
+        />
+        <div id="resultado1"></div>
+      </div>
     </form>
 
     <form action="#">
-      <h2>Permutação Circular</h2>
-      <label for="permutacao-circular" class="label"
-        >Indique o número de elementos:</label
-      >
-      <input type="number" id="permutacao-circular" class="input" />
-      <input type="submit" id="submit2" class="submit" value="Calcular" />
-      <div id="resultado2"></div>
+      <div class="caixa-pai">
+        <h2>Permutação Circular</h2>
+        <label for="permutacao-circular" class="label caixa-filho"
+          >Indique o número de elementos:</label
+        >
+        <input
+          type="number"
+          id="permutacao-circular"
+          class="input caixa-filho"
+        />
+        <input
+          type="submit"
+          id="submit2"
+          class="submit caixa-filho"
+          value="Calcular"
+        />
+
+        <div id="resultado2"></div>
+      </div>
     </form>
 
     <script src="./script.js"></script>

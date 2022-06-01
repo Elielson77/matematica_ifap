@@ -11,16 +11,22 @@
   <body>
     <h1 class="center">Combinação Simples</h1>
     <form action="#">
-      <label for="total-elementos" class="label"
-        >Digite o Número Total de Elementos (n):</label
-      >
-      <input type="number" id="total-elementos" class="input" />
-
-      <label for="numero-combinacao" class="label"
-        >Digite o Número de Elementos da Combinação (p):</label
-      >
-      <input type="number" id="numero-combinacao" class="input" />
-      <input type="submit" id="submit" class="submit" value="Calcular" />
+      <div class="caixa-pai">
+        <label for="total-elementos" class="label caixa-filho"
+          >Digite o Número Total de Elementos (n):</label
+        >
+        <input type="number" id="total-elementos" class="input caixa-filho" />
+        <label for="numero-combinacao" class="label caixa-filho"
+          >Digite o Número de Elementos da Combinação (p):</label
+        >
+        <input type="number" id="numero-combinacao" class="input caixa-filho" />
+        <input
+          type="submit"
+          id="submit"
+          class="submit caixa-filho"
+          value="Calcular"
+        />
+      </div>
 
       <div id="resultado"></div>
     </form>

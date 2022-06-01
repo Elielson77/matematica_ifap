@@ -12,6 +12,7 @@ body {
   padding: 5px 8px;
   border-radius: 4px 8px 4px 8px;
   cursor: pointer;
+  width: 70px;
 }
 
 .center {
@@ -43,10 +44,8 @@ body {
   padding: 5px;
   margin: 5px;
   margin-bottom: 15px;
-  width: 50vw;
 }
 .resultado {
-  border: 1px solid black;
   font-style: italic;
   border-radius: 5px;
   padding: 10px;
@@ -57,7 +56,6 @@ body {
 .erro {
   color: rgb(255, 128, 128);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.432);
-  border: 1px solid black;
   font-style: italic;
   border-radius: 5px;
   padding: 10px;
