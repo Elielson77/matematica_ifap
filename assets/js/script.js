@@ -1,9 +1,9 @@
 const select = document.querySelector('#select')
 const submit = document.querySelector('#submit')
-let form = document.querySelector('#form')
+const form = document.querySelector('#form')
 let valor;
 
-submit.addEventListener('click', (e) => {
+submit.addEventListener('click', () => {
   select.addEventListener('change', () => { valor = select.value; })
   changePage()
   console.log(form.action)
@@ -11,9 +11,9 @@ submit.addEventListener('click', (e) => {
 
 function changePage() {
   if (valor === '') return form.action = '#';
-  if (valor === 'Probabilidade') return form.action = './pages/probabilidade/index.html';
-  if (valor === 'Arranjo') return form.action = './pages/arranjo/index.html';
-  if (valor === 'Combinação') return form.action = './pages/combinacao/index.html';
-  if (valor === 'Permutação') return form.action = './pages/permutacao/index.html';
+  if (valor === 'probabilidade') return form.action = './pages/probabilidade/index.html';
+  if (valor === 'arranjo') return form.action = './pages/arranjo/index.html';
+  if (valor === 'combinacao') return form.action = './pages/combinacao/index.html';
+  if (valor === 'permutacao') return form.action = './pages/permutacao/index.html';
 }
 
