@@ -9,7 +9,15 @@ submit.addEventListener('click', (e) => {
   const prob = calculaProbabilidade(espacoAmostral.value, evento.value);
   const porcent = calculaPorcentagem(prob)
 
-  resultado.innerHTML = `A sua probabilidade é de ${prob} ou seja, ${porcent}%`
+  if (prob > 1) {
+    resultado.classList.toggle('erro')
+    resultado.innerHTML = 'Tem algo errado com sua conta!'
+    return
+  } else {
+    resultado.innerHTML = `A sua probabilidade é de ${prob} ou seja, ${porcent}%`
+    resultado.classList.remove('erro')
+  }
+
 })
 
 const calculaProbabilidade = (espacoAmostral, evento) => {
