@@ -5,13 +5,24 @@ const submit = document.querySelector('#submit')
 
 submit.addEventListener('click', (e) => {
   e.preventDefault()
-  resultado.innerHTML = ` É possível fazer ${calculaArranjo(n.value, p.value)} arranjos!`
+  const resul = calculaArranjo(n.value, p.value);
+
+  if (resul < 0 || !resul) {
+    resultado.classList.add('erro')
+    resultado.innerHTML = 'Tem algo de errado com a sua conta!'
+  } else {
+    resultado.classList.remove('erro')
+    resultado.innerHTML = ` É possível fazer ${resul} arranjos!`
+  }
 })
 
 const calculaFatorial = (n) => {
   let arranjo = n;
   for (let i = 1; i < n; i++) {
     arranjo *= i;
+  }
+  if (n === 0) {
+    return 1;
   }
   return arranjo;
 }
