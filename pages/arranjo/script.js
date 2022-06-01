@@ -9,9 +9,11 @@ submit.addEventListener('click', (e) => {
 
   if (resul < 0 || !resul) {
     resultado.classList.add('erro')
+    resultado.classList.remove('resultado')
     resultado.innerHTML = 'Tem algo de errado com a sua conta!'
   } else {
     resultado.classList.remove('erro')
+    resultado.classList.add('resultado')
     resultado.innerHTML = ` É possível fazer ${resul} arranjos!`
   }
 })

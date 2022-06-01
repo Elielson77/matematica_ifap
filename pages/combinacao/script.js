@@ -11,9 +11,11 @@ submit.addEventListener('click', (e) => {
   if (resul < 0 || !resul) {
     resultado.innerHTML = 'Tem algo errado com sua conta!'
     resultado.classList.add('erro')
+    resultado.classList.remove('resultado')
   } else {
     resultado.innerHTML = `É possível formar ${resul} combinações!`
     resultado.classList.remove('erro')
+    resultado.classList.add('resultado')
   }
 
 })

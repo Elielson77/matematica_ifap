@@ -16,9 +16,11 @@ submitUm.addEventListener('click', (e) => {
 
   if (resul < 0 || !resul) {
     resultadoUm.classList.add('erro')
+    resultadoUm.classList.remove('resultado')
     resultadoUm.innerHTML = 'Tem algo de errado com a sua conta!'
   } else {
     resultadoUm.classList.remove('erro')
+    resultadoUm.classList.add('resultado')
     resultadoUm.innerHTML = `É possivel fazer ${resul} combinações!`
   }
 })
@@ -31,9 +33,11 @@ submitDois.addEventListener('click', (e) => {
 
   if (permutacaoCircular < 0 || !permutacaoCircular) {
     resultadoDois.classList.add('erro')
+    resultadoDois.classList.remove('resultado')
     resultadoDois.innerHTML = 'Tem algo de errado com sua Conta!'
   } else {
     resultadoDois.classList.remove('erro')
+    resultadoDois.classList.add('resultado')
     resultadoDois.innerHTML = `Podemos obter ${permutacaoCircular} combinações!`
   }
 })

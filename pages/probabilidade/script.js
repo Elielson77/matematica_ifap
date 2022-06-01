@@ -10,12 +10,14 @@ submit.addEventListener('click', (e) => {
   const porcent = calculaPorcentagem(prob)
 
   if (prob > 1 || !prob) {
-    resultado.classList.toggle('erro')
+    resultado.classList.remove('resultado')
+    resultado.classList.add('erro')
     resultado.innerHTML = 'Tem algo errado com sua conta!'
     return
   } else {
     resultado.innerHTML = `A sua probabilidade é de ${prob} ou seja, ${porcent}%`
     resultado.classList.remove('erro')
+    resultado.classList.add('resultado')
   }
 
 })
