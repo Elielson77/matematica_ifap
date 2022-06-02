@@ -21,7 +21,7 @@ submitUm.addEventListener('click', (e) => {
   } else {
     resultadoUm.classList.remove('erro')
     resultadoUm.classList.add('resultado')
-    resultadoUm.innerHTML = `É possivel fazer ${resul} combinações!`
+    resultadoUm.innerHTML = `É possivel fazer ${resul} permutações!`
   }
 })
 
@@ -38,7 +38,7 @@ submitDois.addEventListener('click', (e) => {
   } else {
     resultadoDois.classList.remove('erro')
     resultadoDois.classList.add('resultado')
-    resultadoDois.innerHTML = `Podemos obter ${permutacaoCircular} combinações!`
+    resultadoDois.innerHTML = `Podemos obter ${permutacaoCircular} permutações!`
   }
 })
 
