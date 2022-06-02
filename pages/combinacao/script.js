@@ -1,12 +1,12 @@
-const elementos = document.querySelector('#total-elementos')
-const elemComb = document.querySelector('#numero-combinacao')
+const n = document.querySelector('#total-elementos')
+const p = document.querySelector('#numero-combinacao')
 const submit = document.querySelector('#submit')
 const resultado = document.querySelector('#resultado')
 
 submit.addEventListener('click', (e) => {
   e.preventDefault()
-  const divisor = calculaFatorial(elemComb.value) * calculaFatorial(elementos.value - elemComb.value)
-  const resul = calculaFatorial(elementos.value) / divisor;
+  const divisor = calculaFatorial(p.value) * calculaFatorial(n.value - p.value)
+  const resul = calculaFatorial(n.value) / divisor;
 
   if (resul < 0 || !resul) {
     resultado.innerHTML = 'Tem algo errado com sua conta!'

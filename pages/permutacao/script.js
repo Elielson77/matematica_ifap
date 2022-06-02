@@ -1,17 +1,17 @@
 // permutação simples
 const submitUm = document.querySelector('#submit1');
 const resultadoUm = document.querySelector('#resultado1')
-const numeroElemento = document.querySelector('#permutacao-simples')
+const n = document.querySelector('#permutacao-simples')
 
 // permutação circular
 const submitDois = document.querySelector('#submit2')
 const resultadoDois = document.querySelector('#resultado2')
-const numeroElementoCircular = document.querySelector('#permutacao-circular')
+const p = document.querySelector('#permutacao-circular')
 
-// permutacao simples
+// permutacao simplen
 submitUm.addEventListener('click', (e) => {
   e.preventDefault();
-  const resul = calculaFatorial(numeroElemento.value);
+  const resul = calculaFatorial(n.value);
   console.log(`vamo ver ${resul}`)
 
   if (resul < 0 || !resul) {
@@ -29,7 +29,7 @@ submitUm.addEventListener('click', (e) => {
 // permutacao circular
 submitDois.addEventListener('click', (e) => {
   e.preventDefault();
-  const permutacaoCircular = calculaFatorial(numeroElementoCircular.value - 1);
+  const permutacaoCircular = calculaFatorial(p.value - 1);
 
   if (permutacaoCircular < 0 || !permutacaoCircular) {
     resultadoDois.classList.add('erro')
