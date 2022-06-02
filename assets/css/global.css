@@ -31,9 +31,9 @@ body {
   width: 80px;
 }
 .label {
-  font-size: 20px;
+  font-size: 25px;
   font-style: italic;
-  color: #da8aff;
+  color: rgb(227 15 191);
 }
 .caixa-pai {
   display: flex;
