@@ -24,7 +24,7 @@ submit.addEventListener('click', (e) => {
 
 const calculaProbabilidade = (espacoAmostral, evento) => {
   const prob = evento / espacoAmostral;
-  return Number(prob.toFixed(2))
+  return Number(prob)
 }
 
 const calculaPorcentagem = (prob) => {
