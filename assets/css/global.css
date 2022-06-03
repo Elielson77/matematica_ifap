@@ -22,13 +22,15 @@ body {
   margin-top: 20px;
 }
 .input {
+  padding: 5px;
   border: none;
   outline: none;
-  font-size: 18px;
+  height: 13px;
+  font-size: 15px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
-  width: 80px;
+  width: 40px;
 }
 .label {
   font-size: 25px;
@@ -79,5 +81,8 @@ body {
   .img {
     width: 110px;
     margin-top: 25px;
+  }
+  .input {
+    width: 18px;
   }
 }

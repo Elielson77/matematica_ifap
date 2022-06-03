@@ -3,6 +3,11 @@ const p = document.querySelector('#numArranjo')
 const resultado = document.querySelector('#resultado')
 const submit = document.querySelector('#submit')
 const divPop = document.querySelector('.pop')
+const nFormula = document.querySelector('#n-formula')
+
+n.addEventListener('change', () => {
+  nFormula.innerHTML = n.value;
+})
 
 submit.addEventListener('click', (e) => {
   e.preventDefault()
