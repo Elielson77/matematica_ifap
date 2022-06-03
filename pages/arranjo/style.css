@@ -1,5 +1,13 @@
 body {
-  background: #411397;
+  background: linear-gradient(
+    180deg,
+    rgba(70, 18, 152, 1) 17%,
+    rgba(193, 16, 182, 1) 63%,
+    rgba(70, 18, 152, 1) 95%
+  );
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+  height: 100vh;
 }
 
 /* #img-caveira {
@@ -67,6 +75,9 @@ span {
 }
 .formula > span {
   margin-right: 10px;
+}
+.bot {
+  margin-top: 120px !important;
 }
 @media (min-width: 600px) {
   .formula {
