@@ -36,7 +36,7 @@ submitUm.addEventListener('click', (e) => {
   } else {
     resultadoUm.classList.remove('erro')
     resultadoUm.classList.add('resultado')
-    resultadoUm.innerHTML = `É possivel fazer ${resul} permutações!`
+    resultadoUm.innerHTML = `É possivel fazer ${resul} permutações! <i class="fa-solid fa-check"></i>`
     if (divPop.children.length === 0) { criaPopSucesso(divPop) }
   }
 })
@@ -66,7 +66,7 @@ submitDois.addEventListener('click', (e) => {
   } else {
     resultadoDois.classList.remove('erro')
     resultadoDois.classList.add('resultado')
-    resultadoDois.innerHTML = `Podemos obter ${permutacaoCircular} permutações!`
+    resultadoDois.innerHTML = `Podemos obter ${permutacaoCircular} permutações! <i class="fa-solid fa-check"></i>`
     if (divPop.children.length === 0) { criaPopSucesso(divPop) }
   }
 })

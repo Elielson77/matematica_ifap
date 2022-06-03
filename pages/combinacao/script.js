@@ -24,7 +24,7 @@ submit.addEventListener('click', (e) => {
     resultado.classList.add('erro')
     resultado.classList.remove('resultado')
   } else {
-    resultado.innerHTML = `É possível formar ${resul} combinações!`
+    resultado.innerHTML = `É possível formar ${resul} combinações! <i class="fa-solid fa-check"></i>`
     resultado.classList.remove('erro')
     resultado.classList.add('resultado')
     if (divPop.children.length === 0) { criaPopSucesso(divPop) }

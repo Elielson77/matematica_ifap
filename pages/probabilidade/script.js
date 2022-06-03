@@ -15,7 +15,7 @@ submit.addEventListener('click', (e) => {
     resultado.innerHTML = 'Tem algo errado com sua conta!'
     return
   } else {
-    resultado.innerHTML = `A sua probabilidade é de ${prob} ou seja, ${porcent}%`
+    resultado.innerHTML = `A sua probabilidade é de ${prob} ou seja, ${porcent}% <i class="fa-solid fa-check"></i>`
     resultado.classList.remove('erro')
     resultado.classList.add('resultado')
   }
