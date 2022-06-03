@@ -15,8 +15,8 @@ submit.addEventListener('click', (e) => {
   } else {
     resultado.classList.remove('erro')
     resultado.classList.add('resultado')
-    resultado.innerHTML = ` É possível fazer ${resul} arranjos!`
-    criaPopSucesso(divPop)
+    resultado.innerHTML = ` É possível fazer ${resul} arranjos! <i class="fa-solid fa-check"></i>`
+    if (divPop.children.length === 0) { criaPopSucesso(divPop) }
   }
 })
 
@@ -43,11 +43,7 @@ function criaPopSucesso(div) {
   img.classList.add('pop-image')
   div.appendChild(img)
   setTimeout(() => {
-    tiraPop()
-  }, 5000)
+    divPop.innerHTML = '';
+  }, 3000)
   return
-}
-
-function tiraPop() {
-  divPop.innerHTML = '';
 }
