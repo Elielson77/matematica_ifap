@@ -36,17 +36,16 @@ body {
 }
 .formula {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
+  width: 155px;
 }
 .formula,
 span {
   font-size: 20px;
   font-style: italic;
   font-weight: bold;
-  width: 155px;
-
   /* border: 1px solid red; */
 }
 .formula-divisao {
@@ -68,4 +67,12 @@ span {
 }
 .formula > span {
   margin-right: 10px;
+}
+@media (min-width: 600px) {
+  .formula {
+    width: 300px;
+  }
+  .formula > span {
+    width: 50px;
+  }
 }
