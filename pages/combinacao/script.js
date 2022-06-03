@@ -2,6 +2,17 @@ const n = document.querySelector('#total-elementos')
 const p = document.querySelector('#numero-combinacao')
 const submit = document.querySelector('#submit')
 const resultado = document.querySelector('#resultado')
+const divPop = document.querySelector('.pop')
+const nFormula = document.querySelector('#n-formula')
+const pFormula = document.querySelector('#p-formula')
+
+n.addEventListener('change', () => {
+  nFormula.innerHTML = n.value || 'n';
+})
+
+p.addEventListener('change', () => {
+  pFormula.innerHTML = p.value || 'p';
+})
 
 submit.addEventListener('click', (e) => {
   e.preventDefault()
@@ -16,6 +27,7 @@ submit.addEventListener('click', (e) => {
     resultado.innerHTML = `É possível formar ${resul} combinações!`
     resultado.classList.remove('erro')
     resultado.classList.add('resultado')
+    if (divPop.children.length === 0) { criaPopSucesso(divPop) }
   }
 
 })
@@ -29,4 +41,15 @@ const calculaFatorial = (n) => {
     return 1;
   }
   return arranjo;
+}
+
+function criaPopSucesso(div) {
+  const img = document.createElement("img")
+  img.src = '../../assets/img/pop-sucess.jpg'
+  img.classList.add('pop-image')
+  div.appendChild(img)
+  setTimeout(() => {
+    divPop.innerHTML = '';
+  }, 3000)
+  return
 }

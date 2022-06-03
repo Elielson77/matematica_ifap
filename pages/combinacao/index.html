@@ -6,26 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../assets/css/global.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="../../assets/img/ifap.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../../assets/img/ifap.png"
+      type="image/x-icon"
+    />
 
     <title>Combinação - IFAP</title>
   </head>
   <body>
+    <div class="pop"></div>
+
     <h1 class="center">Combinação Simples</h1>
+
     <form action="#">
       <div class="caixa-pai">
         <label for="total-elementos" class="label caixa-filho"
-          >Digite o Número Total de Elementos (n):</label
+          >n = Número total de elementos</label
         >
-        <input type="number" id="total-elementos" class="input caixa-filho" />
         <label for="numero-combinacao" class="label caixa-filho"
-          >Digite o Número de Elementos da Combinação (p):</label
+          >p = Número de elementos da combinação</label
         >
-        <input type="number" id="numero-combinacao" class="input caixa-filho" />
+
+        <div class="formula caixa-filho bot">
+          <span>C<sub>n,p</sub>=</span>
+          <div class="formula-divisao">
+            <div class="divisao-cima">
+              <input
+                type="number"
+                id="total-elementos"
+                class="input"
+                placeholder="n"
+              />
+              !
+            </div>
+            <span class="barra-divisao">_____________</span>
+            <div class="divisao-baixo">
+              <input
+                type="number"
+                id="numero-combinacao"
+                class="input"
+                placeholder="p"
+              />
+              ! (<span id="n-formula">n</span> -
+              <span id="p-formula">p</span>
+              ) !
+            </div>
+          </div>
+        </div>
+
         <input
           type="submit"
           id="submit"
-          class="submit caixa-filho"
+          class="submit caixa-filho center"
           value="Calcular"
         />
       </div>

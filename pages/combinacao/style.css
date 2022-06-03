@@ -1,3 +1,76 @@
 body {
-  background: #1b147c;
+  background: linear-gradient(
+    180deg,
+    rgba(70, 18, 152, 1) 17%,
+    rgba(193, 16, 182, 1) 63%,
+    rgba(70, 18, 152, 1) 95%
+  );
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+  height: 100vh;
+}
+.formula {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 155px;
+}
+.formula,
+span {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  /* border: 1px solid red; */
+}
+.formula-divisao {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+  width: 165px !important;
+}
+.barra-divisao {
+  margin-bottom: 5px;
+  margin-left: 0;
+  line-height: 5px;
+  width: 155px;
+}
+.divisao-baixo {
+  margin-top: 7px;
+  width: 165px;
+  padding-left: 7px;
+}
+.formula > span {
+  margin-right: 10px;
+}
+.bot {
+  margin-top: 120px !important;
+}
+@media (max-width: 600px) {
+  .formula {
+    width: 200px;
+  }
+  .formula > span {
+    width: 40px;
+  }
+}
+
+.pop-image {
+  margin: 10px;
+  position: absolute;
+  top: 8;
+  right: 0;
+  width: 300px;
+  border-radius: 80px;
+  box-shadow: 1px 1px 65px rgb(43, 102, 43);
+  border: 1px solid rgb(43, 102, 43);
+}
+@media (max-width: 600px) {
+  .pop-image {
+    margin-top: 20px;
+    margin-right: 30px;
+    height: 130px;
+    width: 165px;
+  }
 }
