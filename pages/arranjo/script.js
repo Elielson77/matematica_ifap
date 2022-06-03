@@ -6,7 +6,7 @@ const divPop = document.querySelector('.pop')
 const nFormula = document.querySelector('#n-formula')
 
 n.addEventListener('change', () => {
-  nFormula.innerHTML = n.value;
+  nFormula.innerHTML = n.value || 'n';
 })
 
 submit.addEventListener('click', (e) => {
