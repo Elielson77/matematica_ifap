@@ -22,7 +22,7 @@ body {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
-  align-self: center;
+  align-self: center !important;
 }
 .input {
   padding: 5px;
