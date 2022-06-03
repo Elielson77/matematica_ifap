@@ -2,6 +2,7 @@ const n = document.querySelector('#elementos')
 const p = document.querySelector('#numArranjo')
 const resultado = document.querySelector('#resultado')
 const submit = document.querySelector('#submit')
+const divPop = document.querySelector('.pop')
 
 submit.addEventListener('click', (e) => {
   e.preventDefault()
@@ -15,6 +16,7 @@ submit.addEventListener('click', (e) => {
     resultado.classList.remove('erro')
     resultado.classList.add('resultado')
     resultado.innerHTML = ` É possível fazer ${resul} arranjos!`
+    criaPopSucesso(divPop)
   }
 })
 
@@ -32,4 +34,20 @@ const calculaFatorial = (n) => {
 const calculaArranjo = (n, p) => {
   const arranjo = calculaFatorial(n) / calculaFatorial(n - p);
   return arranjo
+}
+
+
+function criaPopSucesso(div) {
+  const img = document.createElement("img")
+  img.src = '../../assets/img/pop-sucess.jpg'
+  img.classList.add('pop-image')
+  div.appendChild(img)
+  setTimeout(() => {
+    tiraPop()
+  }, 5000)
+  return
+}
+
+function tiraPop() {
+  divPop.innerHTML = '';
 }

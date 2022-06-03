@@ -14,3 +14,17 @@ body {
     margin-top: 25px;
   }
 }
+
+.pop-image {
+  margin: 10px;
+  position: absolute;
+  top: 5;
+  right: 0;
+  width: 300px;
+  border-radius: 80px;
+}
+@media (max-width: 600px) {
+  .pop-image {
+    width: 200px;
+  }
+}
