@@ -1,3 +1,4 @@
+import { criaPopFail, criaPopSucesso, calculaFatorial } from "../../assets/js/function.js";
 const n = document.querySelector('#total-elementos')
 const p = document.querySelector('#numero-combinacao')
 const submit = document.querySelector('#submit')
@@ -32,36 +33,3 @@ submit.addEventListener('click', (e) => {
   }
 
 })
-
-const calculaFatorial = (n) => {
-  let arranjo = n;
-  for (let i = 1; i < n; i++) {
-    arranjo *= i;
-  }
-  if (n === 0) {
-    return 1;
-  }
-  return arranjo;
-}
-
-function criaPopSucesso(div) {
-  const img = document.createElement("img")
-  img.src = '../../assets/img/pop-sucess.jpg'
-  img.classList.add('pop-image')
-  div.appendChild(img)
-  setTimeout(() => {
-    divPop.innerHTML = '';
-  }, 3000)
-  return
-}
-
-function criaPopFail(div) {
-  const img = document.createElement("img")
-  img.src = '../../assets/img/te-aviso.ico'
-  img.classList.add('pop-image-fail')
-  div.appendChild(img)
-  setTimeout(() => {
-    divPop.innerHTML = '';
-  }, 3000)
-  return
-}

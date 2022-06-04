@@ -1,3 +1,4 @@
+import { criaPopFail, criaPopSucesso, calculaPorcentagem, calculaProbabilidade } from "../../assets/js/function.js"
 const espacoAmostral = document.querySelector('#espaco-amostral')
 const evento = document.querySelector('#evento')
 const submit = document.querySelector('#calcular')
@@ -24,33 +25,3 @@ submit.addEventListener('click', (e) => {
   }
 
 })
-
-const calculaProbabilidade = (espacoAmostral, evento) => {
-  const prob = evento / espacoAmostral;
-  return Number(prob)
-}
-
-const calculaPorcentagem = (prob) => {
-  return prob * 100;
-}
-
-function criaPopSucesso(div) {
-  const img = document.createElement("img")
-  img.src = '../../assets/img/pop-sucess.jpg'
-  img.classList.add('pop-image')
-  div.appendChild(img)
-  setTimeout(() => {
-    divPop.innerHTML = '';
-  }, 3000)
-  return
-}
-function criaPopFail(div) {
-  const img = document.createElement("img")
-  img.src = '../../assets/img/te-aviso.ico'
-  img.classList.add('pop-image-fail')
-  div.appendChild(img)
-  setTimeout(() => {
-    divPop.innerHTML = '';
-  }, 3000)
-  return
-}

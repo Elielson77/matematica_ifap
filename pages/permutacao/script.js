@@ -1,3 +1,4 @@
+import { criaPopFail, criaPopSucesso, calculaFatorial } from "../../assets/js/function.js";
 const divPop = document.querySelector('.pop')
 // permutação simples
 const submitUm = document.querySelector('#submit1');
@@ -62,7 +63,7 @@ submitDois.addEventListener('click', (e) => {
     resultadoDois.classList.add('erro')
     resultadoDois.classList.remove('resultado')
     resultadoDois.innerHTML = 'Tem algo de errado com sua Conta!'
-    if (divPop.children.length === 0) { criaPopFail(divPop) }
+    criaPopFail(divPop)
   } else {
     resultadoDois.classList.remove('erro')
     resultadoDois.classList.add('resultado')
@@ -70,36 +71,3 @@ submitDois.addEventListener('click', (e) => {
     if (divPop.children.length === 0) { criaPopSucesso(divPop) }
   }
 })
-
-
-const calculaFatorial = (n) => {
-  let arranjo = n;
-  for (let i = 1; i < n; i++) {
-    arranjo *= i;
-  }
-  if (n === 0) {
-    return 1;
-  }
-  return arranjo;
-}
-
-function criaPopSucesso(div) {
-  const img = document.createElement("img")
-  img.src = '../../assets/img/pop-sucess.jpg'
-  img.classList.add('pop-image')
-  div.appendChild(img)
-  setTimeout(() => {
-    divPop.innerHTML = '';
-  }, 3000)
-  return
-}
-function criaPopFail(div) {
-  const img = document.createElement("img")
-  img.src = '../../assets/img/te-aviso.ico'
-  img.classList.add('pop-image-fail')
-  div.appendChild(img)
-  setTimeout(() => {
-    divPop.innerHTML = '';
-  }, 3000)
-  return
-}
