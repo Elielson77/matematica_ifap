@@ -23,6 +23,7 @@ submit.addEventListener('click', (e) => {
     resultado.innerHTML = 'Tem algo errado com sua conta!'
     resultado.classList.add('erro')
     resultado.classList.remove('resultado')
+    if (divPop.children.length === 0) { criaPopFail(divPop) }
   } else {
     resultado.innerHTML = `É possível formar ${resul} combinações! <i class="fa-solid fa-check"></i>`
     resultado.classList.remove('erro')
@@ -47,6 +48,17 @@ function criaPopSucesso(div) {
   const img = document.createElement("img")
   img.src = '../../assets/img/pop-sucess.jpg'
   img.classList.add('pop-image')
+  div.appendChild(img)
+  setTimeout(() => {
+    divPop.innerHTML = '';
+  }, 3000)
+  return
+}
+
+function criaPopFail(div) {
+  const img = document.createElement("img")
+  img.src = '../../assets/img/te-aviso.ico'
+  img.classList.add('pop-image-fail')
   div.appendChild(img)
   setTimeout(() => {
     divPop.innerHTML = '';

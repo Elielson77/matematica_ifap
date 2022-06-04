@@ -17,6 +17,7 @@ submit.addEventListener('click', (e) => {
     resultado.classList.add('erro')
     resultado.classList.remove('resultado')
     resultado.innerHTML = 'Tem algo de errado com a sua conta!'
+    if (divPop.children.length === 0) { criaPopFail(divPop) }
   } else {
     resultado.classList.remove('erro')
     resultado.classList.add('resultado')

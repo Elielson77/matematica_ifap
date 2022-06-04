@@ -32,6 +32,7 @@ submitUm.addEventListener('click', (e) => {
     resultadoUm.classList.add('erro')
     resultadoUm.classList.remove('resultado')
     resultadoUm.innerHTML = 'Tem algo de errado com a sua conta!'
+    if (divPop.children.length === 0) { criaPopFail(divPop) }
   } else {
     resultadoUm.classList.remove('erro')
     resultadoUm.classList.add('resultado')
@@ -61,6 +62,7 @@ submitDois.addEventListener('click', (e) => {
     resultadoDois.classList.add('erro')
     resultadoDois.classList.remove('resultado')
     resultadoDois.innerHTML = 'Tem algo de errado com sua Conta!'
+    if (divPop.children.length === 0) { criaPopFail(divPop) }
   } else {
     resultadoDois.classList.remove('erro')
     resultadoDois.classList.add('resultado')
@@ -85,6 +87,16 @@ function criaPopSucesso(div) {
   const img = document.createElement("img")
   img.src = '../../assets/img/pop-sucess.jpg'
   img.classList.add('pop-image')
+  div.appendChild(img)
+  setTimeout(() => {
+    divPop.innerHTML = '';
+  }, 3000)
+  return
+}
+function criaPopFail(div) {
+  const img = document.createElement("img")
+  img.src = '../../assets/img/te-aviso.ico'
+  img.classList.add('pop-image-fail')
   div.appendChild(img)
   setTimeout(() => {
     divPop.innerHTML = '';

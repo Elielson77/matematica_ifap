@@ -82,6 +82,23 @@ body {
   margin-top: 30px;
   border-radius: 10px;
 }
+.pop-image {
+  margin: 10px;
+  position: absolute;
+  top: 8;
+  right: 0;
+  width: 300px;
+  border-radius: 80px;
+  box-shadow: 1px 1px 65px rgb(43, 102, 43);
+  border: 1px solid rgb(43, 102, 43);
+}
+.pop-image-fail {
+  margin: 10px;
+  position: absolute;
+  top: 8;
+  right: 0;
+  width: 300px;
+}
 @media (max-width: 600px) {
   .img {
     width: 110px;
@@ -92,5 +109,17 @@ body {
   }
   .submit {
     margin-top: 40px;
+  }
+  .pop-image-fail {
+    margin-top: 20px;
+    margin-right: 30px;
+    height: 160px;
+    width: 140px;
+  }
+  .pop-image {
+    margin-top: 20px;
+    margin-right: 30px;
+    height: 130px;
+    width: 165px;
   }
 }
