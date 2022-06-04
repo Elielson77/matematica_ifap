@@ -16,7 +16,6 @@ const circular = document.querySelector('.circular')
 // permutacao simples
 
 h2Simples.addEventListener('click', () => {
-  circular.style.display = 'none'
   if (simples.style.display == 'flex') {
     simples.style.display = 'none'
   } else {
@@ -45,7 +44,6 @@ submitUm.addEventListener('click', (e) => {
 // permutacao circular
 
 h2Circular.addEventListener('click', () => {
-  simples.style.display = 'none'
   if (circular.style.display == 'flex') {
     circular.style.display = 'none'
   } else {
