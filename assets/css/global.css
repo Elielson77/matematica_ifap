@@ -74,6 +74,7 @@ body {
   position: absolute;
   bottom: 0;
   margin: 10px;
+  margin-bottom: 3px;
 }
 .img {
   max-width: 150px;

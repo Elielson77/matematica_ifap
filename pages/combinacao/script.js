@@ -19,7 +19,7 @@ submit.addEventListener('click', (e) => {
   const divisor = calculaFatorial(p.value) * calculaFatorial(n.value - p.value)
   const resul = calculaFatorial(n.value) / divisor;
 
-  if (resul < 0 || !resul) {
+  if (resul < 0 || !resul || typeof resul === 'Infinity') {
     resultado.innerHTML = 'Tem algo errado com sua conta!'
     resultado.classList.add('erro')
     resultado.classList.remove('resultado')
