@@ -18,19 +18,46 @@
     <title>Probabilidade - IFAP</title>
   </head>
   <body>
+    <div class="pop"></div>
     <h1 class="center">Probabilidade</h1>
 
     <div class="caixa-pai">
       <label for="evento" class="label caixa-filho"
-        >Determine o número de Eventos - n(A):</label
+        >n(A) = Número de eventos</label
       >
-      <input type="number" id="evento" class="input caixa-filho" />
       <label for="espaco-amostral" class="label caixa-filho"
-        >Determine o Espaço Amostral - n(S):</label
-      >
-      <input type="number" id="espaco-amostral" class="input caixa-filho" />
+        >n(S) = Espaço amostral
+      </label>
 
-      <input type="submit" id="calcular" class="submit" value="Calcular" />
+      <div class="formula caixa-filho bot">
+        <span>P(A)=</span>
+        <div class="formula-divisao">
+          <div class="divisao-cima">
+            <input
+              type="number"
+              id="evento"
+              class="input w"
+              placeholder="n(A)"
+            />
+          </div>
+          <span class="barra-divisao">________</span>
+          <div class="divisao-baixo">
+            <input
+              type="number"
+              id="espaco-amostral"
+              class="input w"
+              placeholder="n(S)"
+            />
+          </div>
+        </div>
+      </div>
+
+      <input
+        type="submit"
+        id="calcular"
+        class="submit center"
+        value="Calcular"
+      />
     </div>
 
     <div id="resultado"></div>

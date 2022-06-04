@@ -1,7 +1,5 @@
-const select = document.querySelector('#select')
 const submit = document.querySelector('#submit')
 const form = document.querySelector('#form')
-let valor;
 
 submit.addEventListener('click', () => {
   changePage()

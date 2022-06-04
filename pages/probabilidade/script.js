@@ -2,6 +2,7 @@ const espacoAmostral = document.querySelector('#espaco-amostral')
 const evento = document.querySelector('#evento')
 const submit = document.querySelector('#calcular')
 const resultado = document.querySelector('#resultado')
+const divPop = document.querySelector('.pop')
 
 submit.addEventListener('click', (e) => {
   e.preventDefault()
@@ -18,6 +19,7 @@ submit.addEventListener('click', (e) => {
     resultado.innerHTML = `A sua probabilidade é de ${prob} ou seja, ${porcent}% <i class="fa-solid fa-check"></i>`
     resultado.classList.remove('erro')
     resultado.classList.add('resultado')
+    criaPopSucesso(divPop)
   }
 
 })
@@ -29,4 +31,15 @@ const calculaProbabilidade = (espacoAmostral, evento) => {
 
 const calculaPorcentagem = (prob) => {
   return prob * 100;
+}
+
+function criaPopSucesso(div) {
+  const img = document.createElement("img")
+  img.src = '../../assets/img/pop-sucess.jpg'
+  img.classList.add('pop-image')
+  div.appendChild(img)
+  setTimeout(() => {
+    divPop.innerHTML = '';
+  }, 3000)
+  return
 }
