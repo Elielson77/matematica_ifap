@@ -1,7 +1,15 @@
 body {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  background: #54007a;
+  background: linear-gradient(
+    180deg,
+    rgba(70, 18, 152, 1) 17%,
+    rgba(193, 16, 182, 1) 63%,
+    rgba(70, 18, 152, 1) 95%
+  );
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+  height: 100vh;
 }
 .submit {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);

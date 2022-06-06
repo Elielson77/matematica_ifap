@@ -15,52 +15,20 @@
   </head>
   <body>
     <h1 class="center">Análise Combinatória e Probabilidade</h1>
-    <form action="#" id="form">
-      <h3 class="center">Qual cálculo você irá fazer?</h3>
-
-      <div class="caixa-pai">
-        <div class="caixa-filho">
-          <input
-            type="radio"
-            name="select"
-            id="permutacao"
-            value="permutacao"
-          />
-          <label for="permutacao" class="label">Permutação</label>
-        </div>
-        <div class="caixa-filho">
-          <input type="radio" name="select" id="arranjo" value="arranjo" />
-          <label for="arranjo" class="label">Arranjo</label>
-        </div>
-        <div class="caixa-filho">
-          <input
-            type="radio"
-            name="select"
-            id="combinacao"
-            value="combinacao"
-          />
-          <label for="combinacao" class="label">Combinação</label>
-        </div>
-        <div class="caixa-filho">
-          <input
-            type="radio"
-            name="select"
-            id="probabilidade"
-            value="probabilidade"
-          />
-          <label for="probabilidade" class="label">Probabilidade</label>
-        </div>
-        <input
-          type="submit"
-          id="submit"
-          class="submit center"
-          value="Começar!"
-        />
-      </div>
-    </form>
-    <a href="https://github.com/Elielson77/matematica_ifap" target="_blank"
+    <h3 class="center">Que cálculo você irá fazer?</h3>
+    <div class="container">
+      <a href="./pages/arranjo/index.html" class="change">Arranjo</a>
+      <a href="./pages/combinacao/index.html" class="change">Combinação</a>
+      <a href="./pages/permutacao/index.html" class="change">Permutação</a>
+      <a href="./pages/probabilidade/index.html" class="change"
+        >Probabilidade</a
+      >
+    </div>
+    <a
+      href="https://github.com/Elielson77/matematica_ifap"
+      target="_blank"
+      id="repo"
       >Link do Repositório</a
     >
-    <script src="./assets/js/script.js" type="module"></script>
   </body>
 </html>

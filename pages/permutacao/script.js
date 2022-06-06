@@ -6,6 +6,7 @@ const resultadoUm = document.querySelector('#resultado1')
 const n = document.querySelector('#permutacao-simples')
 const h2Simples = document.querySelector('#h2-simples')
 const simples = document.querySelector('.simples')
+const setaSimples = document.querySelector('#seta-simples')
 
 // permutação circular
 const submitDois = document.querySelector('#submit2')
@@ -13,14 +14,18 @@ const resultadoDois = document.querySelector('#resultado2')
 const p = document.querySelector('#permutacao-circular')
 const h2Circular = document.querySelector('#h2-circular')
 const circular = document.querySelector('.circular')
+const setaCircular = document.querySelector('#seta-circular')
+
 
 // permutacao simples
 
 h2Simples.addEventListener('click', () => {
   if (simples.style.display == 'flex') {
     simples.style.display = 'none'
+    setaSimples.innerHTML = '<i class="fa-solid fa-angle-down"></i>'
   } else {
     simples.style.display = 'flex'
+    setaSimples.innerHTML = '<i class="fa-solid fa-angle-up"></i>'
   }
 })
 
@@ -48,8 +53,10 @@ submitUm.addEventListener('click', (e) => {
 h2Circular.addEventListener('click', () => {
   if (circular.style.display == 'flex') {
     circular.style.display = 'none'
+    setaCircular.innerHTML = '<i class="fa-solid fa-angle-down"></i>'
   } else {
     circular.style.display = 'flex'
+    setaCircular.innerHTML = '<i class="fa-solid fa-angle-up"></i>'
   }
 
 })

@@ -1,7 +1,56 @@
-a {
+h3 {
+  margin-top: 30px !important;
+}
+#repo {
   color: rgba(0, 0, 0, 0.884);
   margin: 8px;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.container {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 70vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.change {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+  border: 1px solid #9b00b3;
+  border-radius: 10px;
+  background: #bb6bc788;
+  width: 40%;
+  height: 100px;
+  margin: 25px;
+  cursor: pointer;
+}
+.change:hover,
+.change:checked {
+  border: none;
+  background: #60376688;
+  box-shadow: 0 0 60px #60376688;
+}
+@media (max-width: 600px) {
+  .container {
+    margin-left: 0;
+    margin-top: 80px;
+    width: 95vw;
+    height: 230px;
+  }
+  .change {
+    width: 42%;
+    height: 80px;
+    margin: 10px;
+    font-size: 20px;
+  }
 }
