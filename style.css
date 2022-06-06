@@ -1,12 +1,17 @@
 h3 {
   margin-top: 30px !important;
 }
-#repo {
+.repo {
   color: rgba(0, 0, 0, 0.884);
   margin: 8px;
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.es{
+  position: absolute; 
+  bottom: 0;
+  left: 0 !important;
 }
 .container {
   margin: 0 auto;
